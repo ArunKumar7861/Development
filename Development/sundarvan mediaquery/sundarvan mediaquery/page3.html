@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css"
+        rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css"
+        rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400;500&amp;family=Open+Sans&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&amp;display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    
+    <title>Puppetry Show</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            background-image: url(wood-top.jpg);
+            height: 120vh;
+            width: 100%;
+          
+
+        }
+
+        .child1 {
+            color: black;
+            background-color: white;
+            height: 210px;
+            width: 800px;
+            font-weight: 15px;
+            font-size: 18px;
+        }
+
+        .text {
+            font-size: 50px;
+            color: white;
+            margin-top: -200px;
+            font-family: "Edu TAS Beginner";
+        }
+
+        .img {
+            opacity: 0.5;
+            width: 800px;
+            height: 300px;
+        }
+
+        .green {
+            color: green;
+        }
+
+        /* footer */
+
+        .footermain {
+            display: flex;
+            justify-content: space-around;
+            background-color: black;
+            color: white;
+        }
+
+
+        .fbtn1 {
+            height: 30px;
+            width: 80px;
+            color: black;
+            background-color: green;
+        }
+
+/* 
+        manu */
+        .nav{
+        display: flex;
+        justify-content: space-between;
+    }
+        .abc {
+        background-color: rgb(83, 28, 31);
+        height: 100vh;
+        color: white;
+        
+    }
+
+    .offcanvas-header {
+        background-color: rgb(83, 28, 31);
+        width: 1200px;
+        color: white;
+    }
+     .offcanvas-body {
+        background-color: rgb(83, 28, 31);
+        width: 1200px;
+        color: white;
+     }
+
+
+
+
+     .manubtn1 {
+            height: 40px;
+            width: 200px;
+            margin-left: 50px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 15px;
+            font-weight: 30px;
+        }
+
+    
+
+        .manuborder1{
+            border: 2px dotted white;
+           border-style: dotted;
+           font-size:50px ;
+           font-weight: 50px;
+           /* border-color: black;
+            border-top: 2px;
+            border-bottom: 2px;
+            border-right: 0px;
+            border-left: 0px; */
+        }
+        .manuparent{
+            display: flex;
+            justify-content: space-around;
+            row-gap: 3;
+
+        }
+        .yellow{
+            color: yellow;
+        }
+        .manubtn2{
+            height: 40px;
+            width: 150px;
+            border-radius: 15px;
+            color: white;
+            background-color: green;
+            justify-content: center;
+        }
+        .media{
+            border: 2px dotted white;
+           border-style: dotted;
+           font-size:50px ;
+           font-weight: 50px;
+        }
+
+
+        @media screen and (max-width:720px) {
+            .parent{
+                width: 70%;
+                height: 80px;
+            }
+
+
+            .main{
+                width: 100%;
+                height: 750px;
+            }
+            .img {
+                height: 180px;
+                width: 70%;
+            }
+            .logo{
+                height:70px;
+                width: 250px;
+            }
+
+            .child1 {
+                height: 370px;
+                width: 60% !important;
+                margin-top: -10px;
+                font-size: 17px;
+                font-weight: 15px;
+            }
+          
+
+            .text1 {
+                font-weight: 50px;
+                font-size: 30px;
+                color: white;
+                margin-top: -100px;
+            }
+
+            /* footer */
+            .footermain {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+            }
+
+            .footer1 {
+                margin-left: 30%;
+            }
+
+            .cdf {
+                margin-left: 30%;
+            }
+
+            .bcd {
+                margin-left: 30%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="nav">
+            <div>
+                  <img src="sundarvan-logo-w.png" alt="" class="logo">
+            </div>
+            <div class="manu">
+                <div class="offcanvas abc offcanvas-start container" id="demo">
+                    <div class="offcanvas-header">
+                        <h1 class="offcanvas-title"></h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <center>
+                            <h1 class="manuborder1">MENU</h1>
+                        </center>
+
+
+                        <ul>
+                            <li type="none"> <a href="index.html"><button class="manubtn1">HOME</button></li></a>
+
+                        </ul>
+                        <div class="manuparent">
+
+
+                            <div class="manuchild1">
+
+
+                                <ul>
+                                    <li type="none" class="yellow"><a class="yellow" href="">About</a></li>
+                                    <ul>
+                                        <li type="none"><a href="page1.html">A Nature Discover Center</a></li>
+                                        <li type="none"> <a href="">News and Announcement</a></li>
+                                        <li type="none"><a href="">FAQ</a></li>
+                                        <li type="none"><a href="form.html">Contact us</a></li>
+                                    </ul>
+                                </ul>
+
+
+
+                                <ul>
+                                    <li type="none" class="yellow"><a class="yellow" href="" id="">PLAN YOUR DAY</a>
+                                        <ul>
+                                            <li type="none"><a href="page2.html" id="">Visiting Hours and
+                                                    Tickets</a></li>
+                                            <li type="none"><a href="#" id="">Special Shows</a></li>
+                                            <li type="none"><a href="page3.html" id="">Puppetry Show</a></li>
+                                            <li type="none"><a href="" id="">Exhibits and Amenities</a>
+                                            </li>
+                                            <li type="none"><a href="" id="adventure">Adventure park</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="manuchild2">
+                                <ul>
+                                    <li type="none" class="yellow"><a class="yellow" href="" id="">EDUCATION</a>
+                                        <ul>
+                                            <li type="none"><a href="" id="living-classroom">Living
+                                                    Classroom</a></li>
+                                            <li type="none"><a href="" id="membership">Annual Membership
+                                                    for Schools</a></li>
+                                            <li type="none"><a href="" id="library">Library</a></li>
+                                            <li type="none"><a href="" id="art">Learn ‘Art with Nature’</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+
+
+                                <li type="none" class="yellow"><a class="yellow" href="" id="engage">ENGAGE WITH
+                                        NATURE</a>
+                                    <ul>
+                                        <li type="none"><a href="" id="snake">Snake Awareness Programme</a>
+                                        </li>
+                                        <li type="none"><a href="" id="bat">Bat Awareness Programme</a></li>
+                                        <li type="none"><a href="" id="special-day">Special Day Celebration</a>
+                                        </li>
+                                        <li type="none"><a href="" id="green-day">Green Birthday
+                                                Celebration</a></li>
+                                        <li type="none"><a href="" id="youth">Youth Programmes</a></li>
+                                        <li type="none"><a href="" id="trail">Nature trail walk</a></li>
+                                    </ul>
+                                </li>
+
+                            </div>
+                            <div class="manuchild3">
+                                <ul>
+                                    <li type="none" class="yellow"><a class="yellow" href="" id="support">SUPPORT THE
+                                            ZOO</a>
+                                        <ul>
+                                            <li type="none"><a href="" id="volunteer">Volunteer</a></li>
+                                            <li type="none"><a href="" id="adopt">Adopt An Animal</a></li>
+                                            <li type="none"><a href="" id="media">Sundarvan in media</a></li>
+                                            <li type="none"><a href="" id="research">Research and Publication</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li type="none"><a class="yellow" href="" id="">SUNDARVAN CAMPS</a></li>
+                                    <li type="none"><a href="" id="">Other</a>
+                                    </li>
+
+
+                                    <br>
+                                    <br>
+                                    <center>
+                                        <li type="none" class="manubtn2"><a href="" id="">Donate Now</a></li>
+                                    </center>
+
+
+                                </ul>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="container-fluid mt-3 manu">
+                    <button class="btn btn-primary " type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                        MENU
+                    </button>
+                </div>
+
+
+            </div>
+          
+
+        </div>
+        <center>
+            <br>
+            <br>
+            <div class="parent">
+                <img src="271219104816banner-1.jpg" alt="" class="img">
+                <p class="text" >Puppetry Show</p>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            
+
+            <div class="child1">
+                <p>Puppetry in India is said to have originated in early 5th century BC. Puppetry is the most innovative
+                    and entertaining way of expressing and telling a story. It is one of the best ways to stimulate the
+                    imagination and emotional development of an individual. But puppetry seems to be on the decline with
+                    the rapid spread of the digital media</p>
+             
+                <p>
+                    Here at Sundarvan, we try our best to preserve this traditional art of puppetry.
+                </p>
+            
+                <h1>
+                    Charges: <span class="green"> Rs. 2000 (30-35 minutes) </span>
+                </h1>
+
+            </div>
+    </div>
+    </center>
+
+
+
+    <!-- footer html -->
+
+ 
+    <div class="footermain">
+        <div class="footer1" style="width: 30%;">
+            <h1 style=" font-family: Edu TAS Beginner">about us</h1>
+           Set in the heart of Ahmedabad city, is a lush green zoo
+             that whisks you away from the daily dust and noise
+            to engage your senses to the sounds and beauty of nature.
+            <br>
+           <br>
+            <span>
+                <i class="fa-brands fa-facebook"></i>
+                &nbsp; &nbsp; &nbsp;
+                <i class="fa-brands fa-instagram"></i>
+            </span>
+
+
+
+
+        </div>
+        <div class="cdf" style="width: 30%;">
+            <h1 style=" font-family: Edu TAS Beginner">Get in touch</h1>
+            <br>
+         
+            
+                    <tr>
+                        <td><input type="text" style="height: 30px; width: 250px;" placeholder="Enter Name"></td>
+                    </tr>
+                   <br>
+                   <br>
+                    <tr>
+                        <td><input type="email" style="height: 30px; width: 250px;" placeholder="Enter Your Email"></td>
+                    </tr>
+                    <br>
+                    <br>
+                   
+                  
+                    <tr>
+                        <td> <input type="text" style="height: 30px; width: 250px;" placeholder="Eenter Subject"></td>
+                    </tr>
+                   <br>
+                   <br>
+                    <tr>
+                        <td>
+                            <input type="text" style="height: 50px; width: 250px;" placeholder="Enter Subject">
+                        </td>
+                    </tr>
+
+             
+
+
+
+
+
+            <br>
+            <br>
+            <button type="submit" class="fbtn1">Sbmit</button>
+        </div>
+        <div class="bcd" style="width: 30%;">
+            <h1 style=" font-family: Edu TAS Beginner">Contect</h1>
+            <address>
+                Sundarvan,
+                <br>
+               A Nature Discovery Centre Near ISRO,
+               <br>
+                S. M. Road, Jodhpur Tekra,
+                <br>
+                 Ahmedabad 380 015
+            </address>
+             
+
+            <address>
+                CEE India,
+                <br>
+                 Nehru Foundation For Development,
+                 <br>
+                 Sargam Marg, Thaltej Tekra,
+                 <br>
+                Ahmedabad 380 054
+            </address>
+
+      
+
+
+            079 2692 3148
+            <br>
+             079 2692 1838
+             <br>
+             +91 94087 52601
+             <br>
+            sundarvan@ceeindia.org
+
+
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+
+

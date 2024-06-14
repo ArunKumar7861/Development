@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category | Action</title>
+    <link rel="icon" type="image/x-icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9QhnjQ_AXjYKRO9NHHYz6auTGZXEVOiijbQ&usqp=CAU">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+
+    body {
+        width: 100%;
+        background-color: #2f384a;
+        position: relative;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    h1 {
+        color: #fff;
+        margin: 30px;
+        font-size: 35px;
+      }
+      
+      .recomend {
+        position: relative;
+        width: 97%;
+        margin: 20px;
+        height: 100ww;
+        display: flex;
+      }
+      
+      .cardimg {
+        position: relative;
+        width: 160px;
+        margin: auto; 
+      }
+
+      .container{
+        margin-bottom: 50px;
+      }
+    </style>
+</head>
+<body>
+    <!-- Navbar  -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="navbar-custom">
+    <div class="container ">
+      <a href="#" class="navbar-brand text-white fw-bold ms-2 prime-video"><img
+          src="https://m.media-amazon.com/images/G/01/digital/video/acquisition/web_footer_logo._CB462908456_.png"
+          width="150" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse ms-5" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-secondary" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Home
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="index.html">Back to home</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-secondary" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Store
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">All</a></li>
+              <li><a class="dropdown-item" href="#"> Rent</a></li>
+              <li><a class="dropdown-item" href="#"> Channels</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-secondary" href="#">Live Tv</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-secondary" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Categories
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="action.html">Action</a></li>
+              <li><a class="dropdown-item" href="popular.html">Popular</a></li>
+              <li><a class="dropdown-item" href="recomended.html">Recomended</a></li>
+              <li><a class="dropdown-item" href="#">Horror</a></li>
+            </ul>
+          </li>
+
+        </ul>
+
+        <form class="d-flex text-secondary" role="search">
+          <span class="me-4 mt-2 search-icon"><i class="fa fa-search fs-4" aria-hidden="true"></i></span>
+          <span class="me-4 mt-2 fs-5">Try for free</span>
+          <button type="button" class="btn btn-dark me-3">EN<i class="fa fa-angle-down ms-1"
+              aria-hidden="true"></i></i></button>
+          <span class="mt-2 user-icon"><i class="fa fa-user-o fs-5" aria-hidden="true"></i></span>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <section class="container">
+    <h1> Recomended For You </h1>
+    <section class="recomend d-flex flex-wrap justify-content-center">
+        <img src="img/poster14.webp" alt="" class="cardimg">
+        <img src="img/poster 9.png" alt="" class="cardimg">
+        <img src="img/poster 3.png" alt="" class="cardimg">
+        <img src="img/poster 4.png" alt="" class="cardimg">
+        <img src="img/poster 5.png" alt="" class="cardimg">
+        <img src="img/poster 13.webp" alt="" class="cardimg">
+        <img src="img/poster 8.png" alt="" class="cardimg">
+    </section>
+</section>
+
+  <!-- footer -->
+  <footer class="container-fluid bg-black mt-5">
+    <div class="d-flex justify-content-center">
+      <div class=" p-4">
+        <img src="https://m.media-amazon.com/images/G/01/digital/video/acquisition/web_footer_logo._CB462908456_.png"
+          width="150" alt="">
+        <p>
+        <pre>Terms and Privacy Notice   Send us feedback   Feedback
+              © 1996-2024, Amazon.com, Inc. or its affiliates</p>
+      </div>
+      <div class="arrow-img"  onclick="scrollUp()">
+        <img src="https://cdn-icons-png.flaticon.com/512/55/55008.png"  alt="">
+      </div>
+  </footer>
+
+  <!-- Bootstrap js cdn -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <script src="./index.js"></script>
+</body>
+</html>
